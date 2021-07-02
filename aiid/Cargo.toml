@@ -1,7 +1,7 @@
 [package]
 name = "aiid"
 authors = [ "AIngle Core Dev Team <devcore@aingle.ai>"]
-version = "0.0.1"
+version = "0.0.2"
 edition = "2018"
 description = "AIngle base32 encoding scheme for keys, agents, identifiers, etc"
 keywords = ["base32", "encoding", "decoding", "erasure", "reed-solomon"]
