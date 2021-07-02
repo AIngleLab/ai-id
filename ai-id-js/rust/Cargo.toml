@@ -1,0 +1,13 @@
+[package]
+name = "ai-id_js"
+version = "0.0.1"
+license = "Apache-2.0"
+
+[lib]
+name = "ai-id_js"
+crate-type = ["cdylib"]
+
+[dependencies]
+ai-id = { path = "../../ai-id" }
+wasm-bindgen = "=0.2.40"
+wee_alloc = "=0.4.4"

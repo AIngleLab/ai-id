@@ -1,0 +1,10 @@
+[workspace]
+
+members = [
+  "ai-id",
+  "ai-id-js/rust",
+]
+
+[profile.release]
+lto = true
+opt-level = 's'
