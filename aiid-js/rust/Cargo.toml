@@ -2,6 +2,9 @@
 name = "aiid_js"
 authors = [ "AIngle Core Dev Team <devcore@aingle.ai>"]
 version = "0.0.1"
+description = "AIngle encoding scheme for keys, agents, identifiers, etc"
+keywords = ["base32", "encoding", "decoding", "erasure", "reed-solomon"]
+categories = ["encoding"]
 license = "Apache-2.0"
 
 [lib]
