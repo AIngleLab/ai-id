@@ -1,6 +1,6 @@
 [package]
-name = "ai-id"
-authors = ["neonphog"]
+name = "aiid"
+authors = [ "AIngle Core Dev Team <devcore@aingle.ai>"]
 version = "0.0.1"
 edition = "2018"
 description = "AIngle base32 encoding scheme for keys, agents, identifiers, etc"
@@ -8,7 +8,7 @@ keywords = ["base32", "encoding", "decoding", "erasure", "reed-solomon"]
 categories = ["encoding"]
 license = "Apache-2.0"
 readme = "README.md"
-documentation = "https://docs.rs/ai-id"
+documentation = "https://docs.rs/aiid"
 repository = "https://github.com/AIngleLab/ai-id"
 
 [dependencies]

@@ -1,5 +1,5 @@
 {
-  "name": "@aingle/ai-id-js",
+  "name": "@aingle/aiid-js",
   "version": "0.0.1",
   "description": "javascript (wasm) build for rust AIngle base32 encoding scheme for keys, agents, identifiers, etc",
   "main": "lib/index.js",

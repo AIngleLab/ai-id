@@ -1,4 +1,4 @@
-extern crate ai-id;
+extern crate aiid;
 extern crate wasm_bindgen;
 extern crate wee_alloc;
 
@@ -19,13 +19,13 @@ macro_rules! jserr {
 }
 
 #[wasm_bindgen]
-pub struct Encoding(ai-id::aiidEncoding);
+pub struct Encoding(aiid::aiidEncoding);
 
 #[wasm_bindgen]
 impl Encoding {
     #[wasm_bindgen(constructor)]
     pub fn new(encoding_name: &str) -> JsResult<Encoding> {
-        Ok(Encoding(jserr!(ai-id::aiidEncoding::with_kind(encoding_name))?))
+        Ok(Encoding(jserr!(aiid::aiidEncoding::with_kind(encoding_name))?))
     }
 
     pub fn encode(&self, data: &[u8]) -> JsResult<String> {

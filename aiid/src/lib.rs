@@ -3,10 +3,10 @@
 //! # Example
 //!
 //! ```
-//! extern crate ai-id;
+//! extern crate aiid;
 //!
 //! fn main() {
-//!     let enc = ai-id::aiidEncoding::with_kind("ais0").unwrap();
+//!     let enc = aiid::aiidEncoding::with_kind("ais0").unwrap();
 //!     let key = enc.encode(&[0; 32]).unwrap();
 //!     assert_eq!("aiSciaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", key);
 //!     let buffer = enc.decode(&key).unwrap();
@@ -95,7 +95,7 @@ static AI_CODE_MAP: &'static [[u8; 2]] = &[
  * XXX
  */
 
-/// represents an encoding configuration for ai-id rendering and parsing
+/// represents an encoding configuration for aiid rendering and parsing
 pub struct aiidEncodingConfig {
     /// byte count of actuall key data that will be encoded
     pub key_byte_count: usize,
@@ -119,10 +119,10 @@ impl aiidEncodingConfig {
     /// # Example
     ///
     /// ```
-    /// extern crate ai-id;
-    /// let aia0 = ai-id::aiidEncodingConfig::new("aia0").unwrap();
-    /// let aik0 = ai-id::aiidEncodingConfig::new("aik0").unwrap();
-    /// let ais0 = ai-id::aiidEncodingConfig::new("ais0").unwrap();
+    /// extern crate aiid;
+    /// let aia0 = aiid::aiidEncodingConfig::new("aia0").unwrap();
+    /// let aik0 = aiid::aiidEncodingConfig::new("aik0").unwrap();
+    /// let ais0 = aiid::aiidEncodingConfig::new("ais0").unwrap();
     /// ```
     pub fn new(kind: &str) -> aiidResult<Self> {
         let kind_b = kind.as_bytes();
@@ -151,7 +151,7 @@ impl aiidEncodingConfig {
     }
 }
 
-/// an instance that can encode / decode a particular ai-id encoding configuration
+/// an instance that can encode / decode a particular aiid encoding configuration
 pub struct aiidEncoding {
     config: aiidEncodingConfig,
     rs_enc: reed_solomon::Encoder,
@@ -183,10 +183,10 @@ impl aiidEncoding {
     /// # Example
     ///
     /// ```
-    /// extern crate ai-id;
-    /// let aia0 = ai-id::aiidEncoding::with_kind("aia0").unwrap();
-    /// let aik0 = ai-id::aiidEncoding::with_kind("aik0").unwrap();
-    /// let ais0 = ai-id::aiidEncoding::with_kind("ais0").unwrap();
+    /// extern crate aiid;
+    /// let aia0 = aiid::aiidEncoding::with_kind("aia0").unwrap();
+    /// let aik0 = aiid::aiidEncoding::with_kind("aik0").unwrap();
+    /// let ais0 = aiid::aiidEncoding::with_kind("ais0").unwrap();
     /// ```
     pub fn with_kind(kind: &str) -> aiidResult<Self> {
         aiidEncoding::new(aiidEncodingConfig::new(kind)?)

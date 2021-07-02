@@ -1,8 +1,8 @@
 [workspace]
 
 members = [
-  "ai-id",
-  "ai-id-js/rust",
+  "aiid",
+  "aiid-js/rust",
 ]
 
 [profile.release]

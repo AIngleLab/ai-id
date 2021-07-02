@@ -7,7 +7,7 @@ Generate AIngle IDs in javascript. A thin wrapper around rust compiled to WASM
 This package is distributed via npm and can be installed using
 
 ```
-npm install @aingle/ai-id-js
+npm install @aingle/aiid-js
 ```
 
 ## Usage

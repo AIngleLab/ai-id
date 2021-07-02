@@ -2,5 +2,5 @@
 
 AIngle base32 encoding scheme for keys, agents, identifiers, etc.
 
-- [The Rust Library](ai-id/README.md)
-- [The Javascript Library](ai-id-js/README.md)
+- [The Rust Library](aiid/README.md)
+- [The Javascript Library](aiid-js/README.md)

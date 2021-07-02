@@ -1,8 +1,8 @@
-/// a simple struct(String) for reporting ai-id errors
+/// a simple struct(String) for reporting aiid errors
 #[derive(Debug, PartialEq, Clone)]
 pub struct aiidError(pub String);
 
-/// ai-id Result type
+/// aiid Result type
 pub type aiidResult<T> = Result<T, aiidError>;
 
 impl std::fmt::Display for aiidError {
