@@ -22,8 +22,8 @@ Depending on if you are using the module in node.js or the browser the calling s
 
 const publicKey = [...] // UInt8Array of bytes of public key
 
-const enc = new Encoding('hcs0') // node.js
-const enc = await new Encoding('hcs0') // browser
+const enc = new Encoding('ais0') // node.js
+const enc = await new Encoding('ais0') // browser
 
 const agentId = enc.encode(publicKey)
 const restoredPublicKey = enc.decode(id)
