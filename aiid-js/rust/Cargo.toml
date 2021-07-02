@@ -8,6 +8,6 @@ name = "aiid_js"
 crate-type = ["cdylib"]
 
 [dependencies]
-aiid = { path = "../../aiid" }
+aiid = "=0.0.2"
 wasm-bindgen = "=0.2.40"
 wee_alloc = "=0.4.4"

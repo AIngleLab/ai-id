@@ -10,10 +10,19 @@ dependencies = [
 ]
 
 [[package]]
+name = "aiid"
+version = "0.0.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2a3ff24781241c228361e75e84448ac0d914b42416d4d489d345942022fcf96f"
+dependencies = [
+ "reed-solomon",
+]
+
+[[package]]
 name = "aiid_js"
 version = "0.0.1"
 dependencies = [
- "aiid",
+ "aiid 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "wasm-bindgen",
  "wee_alloc",
 ]
